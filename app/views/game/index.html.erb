@@ -1,0 +1,16 @@
+<section id="description" >
+  You open your eyes only to discover that there is darkness all around you.
+  The stone walls and steel bars suggest that you are in a prison of some
+  kind.  You have no memory of how you arrived here, or why.
+</section>
+
+
+
+<section id="response">
+</section>
+
+<%= form_tag({action: :handle_command}, {remote: true}) do %>
+  <%= text_field_tag :command %>
+  <%= submit_tag("Do it!") %>
+<% end %>
+
