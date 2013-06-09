@@ -13,7 +13,7 @@ class GameController < ApplicationController
     begin
       @result = c.send(*command)
     rescue Exception => e
-      @result = e.to_s
+      @result = "Stop being an idiot, and do something useful!"
     end
 
   end
