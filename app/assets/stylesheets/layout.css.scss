@@ -8,6 +8,16 @@ div#page_content {
   margin: auto;
 }
 
+header a {  
+  &, &:visited {
+    color: #00ff00;
+  }
+  
+  &:hover {
+    color: #ffffff;
+  }
+}
+
 section {
   border-radius: 25px;
   border: 2px solid red;
