@@ -1,0 +1,15 @@
+<section>
+
+  <p id="description">
+    Hi.  I'm a calculator.  Type an expression, and I'll evaluate it using
+    my calculator brain.
+  </p>
+  
+  <%= form_tag({action: :calculate}, {remote: true}) do %>
+    <%= text_field_tag :expression %>
+    <%= submit_tag("Evaluate") %>
+  <% end %>
+  
+  <p id="result" />
+  
+</section>

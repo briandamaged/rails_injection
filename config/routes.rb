@@ -2,7 +2,10 @@ RailsInjection::Application.routes.draw do
   
   root to: "game#index"
 
-  get "game/index"
+  get "calculator/index", as: :calculator
+  post "calculator/calculate"
+
+  get "game/index", as: :game
   post "game/handle_command"
 
 
