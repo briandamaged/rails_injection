@@ -7,7 +7,7 @@ class CalculatorController < ApplicationController
     begin
       @result = eval(params[:expression])
     rescue Exception
-      @result = "That's not a valid expression.  You must be really dumb."
+      @result = "That's not a valid expression, dummy!"
     end
   end
 end
