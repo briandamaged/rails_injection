@@ -2,7 +2,7 @@
 class CommandHandler
   
   def get(*args)
-    (args.empty?) ? "Get what?" : "You can't get the #{ args.join(" ")}."
+    "You can't get the #{ args.join(" ")}."
   end
   
   def look(*args)
